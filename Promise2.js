@@ -47,14 +47,12 @@ const getData = async function() {
 }}
 
 
-
 //ASYNC AWAIT 3
 
-const getData2 = await function() {
- const arrayOfPromises = urls.map(url => fetch(url);
- for await (let response of arrayOfPromises) {
-  const data = response.json();
-   console.log(data);
- }
+const DataFunc = async function() {
+    const arrOfPromises = urls.map(url=>fetch(url));
+    for await(let response of arrOfPromises) {
+        const data = response.json();
+        console.log(data);
+    }
 }
-
