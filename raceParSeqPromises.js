@@ -25,7 +25,7 @@ async function raceFunc() {
 
 //sequence run, output are all - done one by one.
 async function sequnceFunc() {
-  const outpu1 = await a()
+  const output1 = await a()
   const output2 = await b()
   const output3 = await c()
   return `sequence is done ${output1} ${output2} ${output3}`
