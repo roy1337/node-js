@@ -11,7 +11,7 @@ const c = () => promisify('c', 3000);
 //parallel run, output are all, in order of finish time - done parallely.
 async function parallelFunc() {
   const arrayOfPromises = [a(),b(),c()];
-  const [outpu1,output2,output3] = Promise.all(arrayOfPromises)
+  const [output1,output2,output3] = Promise.all(arrayOfPromises)
   return `parallel is done: ${output1} ${output2} ${output3}`
 }
 
